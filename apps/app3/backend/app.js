@@ -3,7 +3,7 @@ var session = require('express-session');
 var Keycloak = require('keycloak-connect');
 var cors = require('cors');
 
-var dns = require('node:dns');
+var dns = require('dns');
 dns.setDefaultResultOrder('ipv4first');
 
 var app = express();
