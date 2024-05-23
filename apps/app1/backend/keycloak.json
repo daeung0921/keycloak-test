@@ -1,6 +1,6 @@
 {
-  "realm": "myrealm",
+  "realm": "${env.KC_REALM:myrealm}",
   "bearer-only": true,
-  "auth-server-url": "${env.KC_URL:https://kc.idtplateer.com}",
+  "auth-server-url": "${env.KC_URL:http://localhost:8080}",
   "resource": "service-nodejs"
 }
