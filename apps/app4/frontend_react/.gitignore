@@ -1,15 +1,6 @@
-.idea
-*.iml
-gradle
+# See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
 
-package-lock.json
-node_modules
-node
-target
-
-*.pyc
-__pycache__
-
+# dependencies
 /node_modules
 /.pnp
 .pnp.js
