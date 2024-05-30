@@ -37,26 +37,35 @@ Frontend: npm install && npm start
 Backend: python main.py
 ```
 
-## Execution
+## Test
 
 ```bash
-# Frontend 앱 구동
-$ cd frontend-react
-$ npm install
-$ npm start
+# Step 1 > Frontend 앱 구동
+cd frontend-react
+npm install
+npm start
+Keycloak 로그인페이지 나옴
+Keycloak 로그인하면 react index 화면 전환
+F12 Console 열기
+Request To Backend 버튼 클릭시 Keycloak access_token 을 얻는지 Console 탭에서 확인
 
-# Backend 앱 구동
-$ cd backend_python
-$ python main.py
+# Step 2> Backend 앱 구동
+cd backend_python
+python main.py
 
-# Frontend 에서 button 을 눌렀을 때 F12로 Console Output 확인하여 access_token 의 일부 정보를 가져오는지 확인
+# Step 3 > Frontend -> Backend 
+F12 Console 열기
+Request To Backend 버튼 클릭시 Keycloak access_token 을 사용하여 Backend (localhost:5000/secure) 에 Request 전달됨
+Console 에 로그로 대략 아래와 같이 Backend 응답이 기록됨
+{
+  "message": "ID=b7f528f6-71b0-4c90-bb01-603bf0456cbb, Realm Roles=['create-realm', 'default-roles-master', 'offline_access', 'admin', 'uma_authorization', 'myrole']"
+}
 ```
 
 ## Test
 
-```bash
-
-```
+1. 
+- Frontend 에서 button 을 눌렀을 때 F12로 Console Output 확인하여 access_token 의 일부 정보를 가져오는지 확인
 
 ## ETC
 
