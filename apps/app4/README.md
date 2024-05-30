@@ -62,11 +62,6 @@ Console 에 로그로 대략 아래와 같이 Backend 응답이 기록됨
 }
 ```
 
-## Test
-
-1. 
-- Frontend 에서 button 을 눌렀을 때 F12로 Console Output 확인하여 access_token 의 일부 정보를 가져오는지 확인
-
 ## ETC
 
 ```bash
